@@ -1,0 +1,17 @@
+{
+  "kind": "collectionType",
+  "collectionName": "test_patternmakings",
+  "info": {
+    "singularName": "test-patternmaking",
+    "pluralName": "test-patternmakings",
+    "displayName": "TEST PATTERNMAKING"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "TEST": {
+      "type": "string"
+    }
+  }
+}
