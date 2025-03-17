@@ -1,0 +1,17 @@
+{
+  "kind": "collectionType",
+  "collectionName": "second_test_to_see_if_data_deleteds",
+  "info": {
+    "singularName": "second-test-to-see-if-data-deleted",
+    "pluralName": "second-test-to-see-if-data-deleteds",
+    "displayName": "SECOND TEST TO SEE IF DATA DELETED"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "HJJJJ": {
+      "type": "string"
+    }
+  }
+}

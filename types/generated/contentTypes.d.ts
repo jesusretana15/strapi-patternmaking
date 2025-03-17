@@ -534,6 +534,35 @@ export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiSecondTestToSeeIfDataDeletedSecondTestToSeeIfDataDeleted
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'second_test_to_see_if_data_deleteds';
+  info: {
+    displayName: 'SECOND TEST TO SEE IF DATA DELETED';
+    pluralName: 'second-test-to-see-if-data-deleteds';
+    singularName: 'second-test-to-see-if-data-deleted';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    HJJJJ: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::second-test-to-see-if-data-deleted.second-test-to-see-if-data-deleted'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiTestPatternmakingTestPatternmaking
   extends Struct.CollectionTypeSchema {
   collectionName: 'test_patternmakings';
@@ -1077,6 +1106,7 @@ declare module '@strapi/strapi' {
       'api::author.author': ApiAuthorAuthor;
       'api::category.category': ApiCategoryCategory;
       'api::global.global': ApiGlobalGlobal;
+      'api::second-test-to-see-if-data-deleted.second-test-to-see-if-data-deleted': ApiSecondTestToSeeIfDataDeletedSecondTestToSeeIfDataDeleted;
       'api::test-patternmaking.test-patternmaking': ApiTestPatternmakingTestPatternmaking;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
