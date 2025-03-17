@@ -1,20 +1,15 @@
 export default ({env}) => ({ 
     upload: {
-          config: {
-            provider: env('UPLOAD_PROVIDER'),
-            providerOptions: {
-              accessKeyId: env('AWS_ACCESS_KEY_ID'),
-              secretAccessKey: env('AWS_ACCESS_SECRET'),
-              endpoint: env('DO_SPACE_ENDPOINT'),
-              params: {
-                Bucket: env('AWS_BUCKET'),
-              },
-            },
-            actionOptions: {
-              upload: {},
-              uploadStream: {},
-              delete: {},
-            },
-          },
+        config: {
+          provider: "strapi-provider-upload-do", 
+          providerOptions: {
+            key: env('DO_SPACE_ACCESS_KEY'),
+            secret: env('DO_SPACE_SECRET_KEY'),
+            endpoint: env('DO_SPACE_ENDPOINT'),
+            space: env('DO_SPACE_BUCKET'),
+            directory: env('DO_SPACE_DIRECTORY'),
+            cdn: env('DO_SPACE_CDN'),
+          }
         },
+      }, 
     });
