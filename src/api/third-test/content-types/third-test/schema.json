@@ -1,0 +1,17 @@
+{
+  "kind": "collectionType",
+  "collectionName": "third_tests",
+  "info": {
+    "singularName": "third-test",
+    "pluralName": "third-tests",
+    "displayName": "third test"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "tesssttt": {
+      "type": "blocks"
+    }
+  }
+}
