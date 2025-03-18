@@ -1,0 +1,17 @@
+{
+  "kind": "collectionType",
+  "collectionName": "testlocales",
+  "info": {
+    "singularName": "testlocale",
+    "pluralName": "testlocales",
+    "displayName": "testlocale"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "test": {
+      "type": "string"
+    }
+  }
+}
