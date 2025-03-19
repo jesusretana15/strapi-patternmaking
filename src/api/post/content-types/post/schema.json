@@ -17,7 +17,12 @@
   },
   "attributes": {
     "tittle": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "imageHeader": {
       "type": "media",
@@ -33,7 +38,12 @@
     },
     "postBody": {
       "type": "text",
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }
