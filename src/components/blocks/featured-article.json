@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_blocks_featured_articles",
+  "info": {
+    "displayName": "Featured Article",
+    "icon": "book"
+  },
+  "options": {},
+  "attributes": {
+    "headline": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
